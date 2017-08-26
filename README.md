@@ -4,7 +4,7 @@ Experiments with Spring2
 
 # Project Status
 
-TODO
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6cc5dad1b53f454a9ccb2beea8056d28)](https://www.codacy.com/app/antonionoca/spring2-sampleapp?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=antonionoca/spring2-sampleapp&amp;utm_campaign=Badge_Grade)
 
 ## Prerequisites
 
