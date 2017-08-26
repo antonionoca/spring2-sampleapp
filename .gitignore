@@ -23,6 +23,7 @@ hs_err_pid*
 
 # IntelliJ
 **/.idea
+**/spring2sampleapp.iml
 
 # Target folder
 **/target
