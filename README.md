@@ -27,7 +27,7 @@ This will initialize the application on ???
 ## Technologies
 
 - Spring2
-- TestNG
+- JUnit
 
 ## Running the tests
 
