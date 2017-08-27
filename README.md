@@ -35,12 +35,6 @@ This will initialize the application on ???
 mvn test
 ```
 
-#TODO
-
-```
-TODO
-```
-
 # Author
 
 Antonio Noca
@@ -48,4 +42,4 @@ Antonio Noca
 
 # License
 
-This project is licensed under the Apache 2 licence - see [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the Apache 2 licence - see [LICENSE](LICENSE) file for details.
