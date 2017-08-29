@@ -37,8 +37,6 @@ mvn integration-test
 
 ## Todolist
 
-- Move files around.
-- Enable CircleCI.
 - Add Spring core 2.5 as dependency.
 - Support embedded Tomcat.
 - Spring web MVC.
