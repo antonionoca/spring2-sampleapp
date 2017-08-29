@@ -32,8 +32,24 @@ This will initialize the application on ???
 ## Running the tests
 
 ```
-mvn test
+mvn integration-test
 ```
+
+## Todolist
+
+- Move files around.
+- Enable CircleCI.
+- Add Spring core 2.5 as dependency.
+- Support embedded Tomcat.
+- Spring web MVC.
+- Default 404 page.
+- Implement business logic for the REST API.
+- Make repositories return hardcoded lists.
+- Monitor application health using JMX.
+- Spring persistence.
+- Add flyway and HSQLDB.
+- Map beans and add tests.
+- Website using spring and a templating engine.
 
 # Author
 
