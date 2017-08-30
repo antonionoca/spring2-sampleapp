@@ -37,7 +37,6 @@ mvn integration-test
 
 ## Todolist
 
-- Add Spring core 2.5 as dependency.
 - Support embedded Tomcat.
 - Spring web MVC.
 - Default 404 page.
