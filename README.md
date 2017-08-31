@@ -18,11 +18,13 @@ mvn install
 
 ## Getting Started
 
+Start the application
+
 ```
-TODO
+mvn install tomcat:run
 ```
 
-This will initialize the application on ???
+This will initialize the application on localhost:8080
 
 ## Technologies
 
@@ -37,10 +39,13 @@ mvn integration-test
 
 ## Todolist
 
-- Support embedded Tomcat.
 - Spring web MVC.
+- Spring bean lists.
+- Mock MVC
+- Spring REST Docs
 - Default 404 page.
 - Implement business logic for the REST API.
+
 - Make repositories return hardcoded lists.
 - Monitor application health using JMX.
 - Spring persistence.
