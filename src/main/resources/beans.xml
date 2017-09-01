@@ -4,5 +4,15 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
 
+    <bean id="jack" class="com.antonionoca.spring2sampleapp.persistence.model" />
+    <bean id="jean" class="com.antonionoca.spring2sampleapp.persistence.model" />
+    <bean id="john" class="com.antonionoca.spring2sampleapp.persistence.model">
+        <property name="friends">
+            <list>
+                <ref bean="jack" />
+                <ref bean="jean" />
+            </list>
+        </property>
+    </bean>
 
 </beans>
