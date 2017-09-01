@@ -61,3 +61,11 @@ Antonio Noca
 # License
 
 This project is licensed under the Apache 2 licence - see [LICENSE](LICENSE) file for details.
+
+# Reference
+
+https://docs.spring.io/docs/petclinic.html
+https://flywaydb.org/documentation/database/hsql
+https://flywaydb.org/getstarted/
+http://javabeat.net/integrating-spring-framework-with-hibernate-orm-framework/
+https://docs.spring.io/spring/docs/2.5.x/reference/mvc.html
