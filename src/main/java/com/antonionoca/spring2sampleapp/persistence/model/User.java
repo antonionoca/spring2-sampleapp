@@ -1,8 +1,17 @@
 package com.antonionoca.spring2sampleapp.persistence.model;
 
-import java.util.Collection;
-
 public class User {
 
-    private Collection<User> friends;
+    private String name;
+
+    public User() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
