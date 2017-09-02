@@ -24,11 +24,11 @@ Start the application
 mvn install tomcat:run
 ```
 
-This will initialize the application on localhost:8080
+This will initialize the application on http://localhost:8080/
 
 ## Technologies
 
-- Spring2
+- Spring 2.5
 - JUnit
 
 ## Running the tests
@@ -39,14 +39,14 @@ mvn integration-test
 
 ## Todolist
 
-- Spring web MVC.
 - Spring bean lists.
-- Mock MVC
-- Spring REST Docs
+- Mock MVC and functional tests.
+- Spring REST Docs.
 - Default 404 page.
-- Implement business logic for the REST API.
+- Produces only JSON
+- Implement some business logic for the REST API.
 
-- Make repositories return hardcoded lists.
+- Make repositories return the hardcoded lists.
 - Monitor application health using JMX.
 - Spring persistence.
 - Add flyway and HSQLDB.

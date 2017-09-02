@@ -19,6 +19,10 @@
           class="com.antonionoca.spring2sampleapp.controller.UserController">
     </bean>
 
+    <bean id="publicationController"
+          class="com.antonionoca.spring2sampleapp.controller.PublicationController">
+    </bean>
+
     <bean id="errorController"
           class="org.springframework.web.servlet.mvc.UrlFilenameViewController"/>
 
@@ -29,12 +33,20 @@
           class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
         <property name="mappings">
             <props>
-                <prop key="/users.html">userController</prop>
-                <prop key="/users">userController</prop>
+                <prop key="/users.htm">userController</prop>
+                <prop key="/publications.htm">publicationController</prop>
             </props>
         </property>
     </bean>
 
-    <!--<context:component-scan base-package="com.api"/>-->
+    <bean id="viewResolver"
+          class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix">
+            <value>/WEB-INF/jsp/</value>
+        </property>
+        <property name="suffix">
+            <value>.jsp</value>
+        </property>
+    </bean>
 
 </beans>
