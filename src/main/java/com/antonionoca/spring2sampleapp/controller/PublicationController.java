@@ -1,22 +1,16 @@
 package com.antonionoca.spring2sampleapp.controller;
 
-import org.springframework.stereotype.Controller;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.AbstractController;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+public class PublicationController extends AbstractController {
 
-import java.util.ArrayList;
-import java.util.List;
-
-@Controller
-public class UserController extends AbstractController {
-
-    private static final Logger log = LoggerFactory.getLogger(UserController.class);
+    private static final Logger log = LoggerFactory.getLogger(PublicationController.class);
 
     public ModelAndView handleRequestInternal(
             HttpServletRequest request, HttpServletResponse response)
@@ -24,9 +18,6 @@ public class UserController extends AbstractController {
 
         log.info(request.getServletPath());
 
-        List<String> users = new ArrayList<String>();
-        users.add("Joe");
-
-        return new ModelAndView("users", "user", users);
+        return new ModelAndView("publications", "publication", null);
     }
 }
