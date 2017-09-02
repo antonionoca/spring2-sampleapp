@@ -5,17 +5,36 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
 
+    <bean id="messageSource" class=
+            "org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basenames">
+            <list>
+                <value>messages</value>
+                <value>errors</value>
+            </list>
+        </property>
+    </bean>
+
     <bean id="userController"
           class="com.antonionoca.spring2sampleapp.controller.UserController">
     </bean>
+
+    <bean id="errorController"
+          class="org.springframework.web.servlet.mvc.UrlFilenameViewController"/>
+
+    <bean id="simpleHandler"
+          class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
 
     <bean id="urlMapping"
           class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
         <property name="mappings">
             <props>
                 <prop key="/users.html">userController</prop>
+                <prop key="/users">userController</prop>
             </props>
         </property>
     </bean>
+
+    <!--<context:component-scan base-package="com.api"/>-->
 
 </beans>

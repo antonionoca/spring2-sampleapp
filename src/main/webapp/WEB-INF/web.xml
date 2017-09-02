@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+<web-app version="2.4"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-app_2_4.xsd"
-         version="2.4">
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
@@ -22,16 +22,11 @@
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
 
-        <init-param>
-            <param-name>contextConfigLocation</param-name>
-            <param-value>classpath:servlet.xml</param-value>
-        </init-param>
+        <servlet-mapping>
+            <servlet-name>spring2sampleapp</servlet-name>
+            <url-pattern>*.html</url-pattern>
+        </servlet-mapping>
     </servlet>
-
-    <servlet-mapping>
-        <servlet-name>spring2sampleapp</servlet-name>
-        <url-pattern>*.html</url-pattern>
-    </servlet-mapping>
 
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
