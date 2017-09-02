@@ -13,7 +13,7 @@
           class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
         <property name="mappings">
             <props>
-                <prop key="/users">userController</prop>
+                <prop key="/users.html">userController</prop>
             </props>
         </property>
     </bean>
