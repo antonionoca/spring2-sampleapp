@@ -13,10 +13,6 @@ public class UserControllerTest extends TestCase {
 
     private UserController controller;
 
-    public UserControllerTest() {
-
-    }
-
     @Override
     protected void setUp() {
         this.controller = new UserController();

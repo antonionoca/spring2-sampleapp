@@ -12,10 +12,6 @@ public class PublicationControllerTest extends TestCase {
 
     private PublicationController controller;
 
-    public PublicationControllerTest() {
-
-    }
-
     @Override
     protected void setUp() {
         this.controller = new PublicationController();
