@@ -11,18 +11,16 @@ Experiments with Spring2
 
 - Java 8
 
-## Installing
+## Installation
 
 ```
 mvn install
 ```
 
-## Getting Started
-
-Start the application
+## Start the application
 
 ```
-mvn install tomcat:run
+mvn tomcat:run
 ```
 
 This will initialize the application on http://localhost:8080/
