@@ -27,6 +27,6 @@ public class UserController extends AbstractController {
         List<String> users = new ArrayList<String>();
         users.add("Joe");
 
-        return new ModelAndView("users", "user", users);
+        return new ModelAndView("users", "users", users);
     }
 }
