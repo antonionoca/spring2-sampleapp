@@ -40,14 +40,11 @@ mvn integration-test
 
 ## Todolist
 
-- Spring bean lists.
-- Mock MVC and functional tests.
-- Spring REST Docs.
 - Default 404 page.
 - Produces only JSON
 - Implement some business logic for the REST API.
 
-- Make repositories return the hardcoded lists.
+- Make repositories return the bean lists.
 - Monitor application health using JMX.
 - Spring persistence.
 - Add flyway and HSQLDB.

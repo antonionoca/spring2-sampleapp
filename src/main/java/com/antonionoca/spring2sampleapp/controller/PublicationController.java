@@ -18,6 +18,6 @@ public class PublicationController extends AbstractController {
 
         log.info(request.getServletPath());
 
-        return new ModelAndView("publications", "publication", null);
+        return new ModelAndView("publications", "data", null);
     }
 }
