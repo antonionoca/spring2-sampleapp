@@ -39,7 +39,6 @@ mvn integration-test
 
 ## Todolist
 
-- Default 404 page.
 - Produces only JSON
 - Implement some business logic for the REST API.
 
