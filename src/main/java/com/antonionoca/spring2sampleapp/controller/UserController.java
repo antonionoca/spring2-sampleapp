@@ -22,6 +22,12 @@ public class UserController extends AbstractController {
             HttpServletRequest request, HttpServletResponse response)
             throws Exception {
 
+        if (!request.getMethod().equals("GET")) {
+            response.setStatus(HttpServletResponse.SC_NOT_FOUND);
+            response.getWriter().close();
+            return null;
+        }
+
         log.info(request.getServletPath());
 
         List<String> users = new ArrayList<String>();
