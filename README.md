@@ -39,15 +39,9 @@ mvn integration-test
 
 ## Todolist
 
-- Produces only JSON
 - Implement some business logic for the REST API.
-
 - Make repositories return the bean lists.
 - Monitor application health using JMX.
-- Spring persistence.
-- Add flyway and HSQLDB.
-- Map beans and add tests.
-- Website using spring and a templating engine.
 
 # Author
 
