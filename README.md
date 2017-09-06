@@ -39,8 +39,6 @@ mvn integration-test
 
 ## Todolist
 
-- Implement some business logic for the REST API.
-- Make repositories return the bean lists.
 - Monitor application health using JMX.
 
 # Author
