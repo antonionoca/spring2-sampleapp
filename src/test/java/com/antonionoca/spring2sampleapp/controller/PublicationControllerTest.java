@@ -7,6 +7,7 @@ import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 import java.util.Map;
 
 public class PublicationControllerTest extends TestCase {
@@ -35,9 +36,10 @@ public class PublicationControllerTest extends TestCase {
                 modelAndView.getViewName());
 
         Map model = modelAndView.getModel();
-        assertTrue("Model should be 'data'", model.containsKey("data"));
-        Object data = model.get("data");
-        assertNull("Model element 'data' should be null", data);
+        assertTrue("Model should be 'publications'", model.containsKey("publications"));
+        List<String> publications = (List) model.get("publications");
+        assertNotNull("Model element 'data' should not be null", publications);
+        assertEquals("Model element 'users' should contain 2 items", 2, publications.size());
     }
 
     public void testPostRequest() throws Exception {

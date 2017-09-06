@@ -7,6 +7,8 @@ import org.springframework.web.servlet.mvc.AbstractController;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.ArrayList;
+import java.util.List;
 
 public class PublicationController extends AbstractController {
 
@@ -24,6 +26,10 @@ public class PublicationController extends AbstractController {
 
         log.info(request.getServletPath());
 
-        return new ModelAndView("publications", "data", null);
+        List<String> publications = new ArrayList<String>();
+        publications.add("Msg 1");
+        publications.add("Msg 2");
+
+        return new ModelAndView("publications", "publications", publications);
     }
 }
