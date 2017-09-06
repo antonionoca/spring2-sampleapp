@@ -1,5 +1,6 @@
 package com.antonionoca.spring2sampleapp.controller;
 
+import com.antonionoca.spring2sampleapp.service.implementation.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.AbstractController;
@@ -9,9 +10,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Controller
 public class UserController extends AbstractController {
@@ -30,10 +28,8 @@ public class UserController extends AbstractController {
 
         log.info(request.getServletPath());
 
-        List<String> users = new ArrayList<String>();
-        users.add("Joe");
-        users.add("John");
+        UserService userService = new UserService();
 
-        return new ModelAndView("users", "users", users);
+        return new ModelAndView("users", "users", userService.getUsers());
     }
 }

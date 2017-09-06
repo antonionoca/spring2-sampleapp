@@ -4,8 +4,33 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
 
+    <bean id="msg1" class="com.antonionoca.spring2sampleapp.persistence.model.Publication">
+        <constructor-arg value="Msg 1" />
+    </bean>
+    <bean id="msg2" class="com.antonionoca.spring2sampleapp.persistence.model.Publication">
+        <constructor-arg value="Msg 1" />
+    </bean>
+    <bean id="msg3" class="com.antonionoca.spring2sampleapp.persistence.model.Publication">
+        <constructor-arg value="Msg 1" />
+    </bean>
+
     <bean id="jack" class="com.antonionoca.spring2sampleapp.persistence.model.User">
-        <constructor-arg value="Jack" />
+        <constructor-arg value="jack" />
+        <constructor-arg>
+            <list>
+                <ref bean="msg1" />
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="john" class="com.antonionoca.spring2sampleapp.persistence.model.User">
+        <constructor-arg value="john" />
+        <constructor-arg>
+            <list>
+                <ref bean="msg2" />
+                <ref bean="msg3" />
+            </list>
+        </constructor-arg>
     </bean>
 
 </beans>
