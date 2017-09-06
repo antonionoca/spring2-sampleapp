@@ -1,5 +1,6 @@
 package com.antonionoca.spring2sampleapp.controller;
 
+import com.antonionoca.spring2sampleapp.service.IUserService;
 import com.antonionoca.spring2sampleapp.service.implementation.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.ModelAndView;
@@ -28,7 +29,7 @@ public class UserController extends AbstractController {
 
         log.info(request.getServletPath());
 
-        UserService userService = new UserService();
+        IUserService userService = new UserService();
 
         return new ModelAndView("users", "users", userService.getUsers());
     }
