@@ -27,7 +27,7 @@ public class UserControllerTest extends TestCase {
     public void testGetRequest() throws Exception {
         MockHttpServletRequest request = new MockHttpServletRequest();
         request.setMethod("GET");
-        request.setRequestURI("http://localhost:8080/users.htm");
+        request.setRequestURI("http://localhost:8080/users");
         HttpServletResponse response = new MockHttpServletResponse();
 
         ModelAndView modelAndView = controller.handleRequest(request, response);
@@ -44,7 +44,7 @@ public class UserControllerTest extends TestCase {
     public void testPostRequest() throws Exception {
         MockHttpServletRequest request = new MockHttpServletRequest();
         request.setMethod("POST");
-        request.setRequestURI("http://localhost:8080/users.htm");
+        request.setRequestURI("http://localhost:8080/users");
         HttpServletResponse response = new MockHttpServletResponse();
 
         controller.handleRequest(request, response);
@@ -54,7 +54,7 @@ public class UserControllerTest extends TestCase {
     public void testPutRequest() throws Exception {
         MockHttpServletRequest request = new MockHttpServletRequest();
         request.setMethod("PUT");
-        request.setRequestURI("http://localhost:8080/users.htm");
+        request.setRequestURI("http://localhost:8080/users");
         HttpServletResponse response = new MockHttpServletResponse();
 
         try {
@@ -68,7 +68,7 @@ public class UserControllerTest extends TestCase {
     public void testPatchRequest() throws Exception {
         MockHttpServletRequest request = new MockHttpServletRequest();
         request.setMethod("PATCH");
-        request.setRequestURI("http://localhost:8080/users.htm");
+        request.setRequestURI("http://localhost:8080/users");
         HttpServletResponse response = new MockHttpServletResponse();
 
         try {
@@ -82,7 +82,7 @@ public class UserControllerTest extends TestCase {
     public void testDeleteRequest() throws Exception {
         MockHttpServletRequest request = new MockHttpServletRequest();
         request.setMethod("DELETE");
-        request.setRequestURI("http://localhost:8080/users.htm");
+        request.setRequestURI("http://localhost:8080/users");
         HttpServletResponse response = new MockHttpServletResponse();
 
         try {
