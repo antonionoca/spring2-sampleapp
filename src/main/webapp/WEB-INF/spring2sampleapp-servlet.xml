@@ -33,8 +33,8 @@
           class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
         <property name="mappings">
             <props>
-                <prop key="/users">userController</prop>
-                <prop key="/publications">publicationController</prop>
+                <prop key="/users.htm">userController</prop>
+                <prop key="/publications.htm">publicationController</prop>
             </props>
         </property>
     </bean>
