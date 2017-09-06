@@ -5,7 +5,11 @@
        http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
 
     <bean id="jack" class="com.antonionoca.spring2sampleapp.persistence.model.User">
-        <constructor-arg value="Jack" />
+        <constructor-arg value="jack" />
+    </bean>
+
+    <bean id="john" class="com.antonionoca.spring2sampleapp.persistence.model.User">
+        <constructor-arg value="john" />
     </bean>
 
 </beans>

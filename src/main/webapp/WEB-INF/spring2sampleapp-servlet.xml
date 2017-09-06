@@ -19,10 +19,6 @@
           class="com.antonionoca.spring2sampleapp.controller.UserController">
     </bean>
 
-    <bean id="publicationController"
-          class="com.antonionoca.spring2sampleapp.controller.PublicationController">
-    </bean>
-
     <bean id="errorController"
           class="org.springframework.web.servlet.mvc.UrlFilenameViewController"/>
 
@@ -34,7 +30,6 @@
         <property name="mappings">
             <props>
                 <prop key="/users.htm">userController</prop>
-                <prop key="/publications.htm">publicationController</prop>
             </props>
         </property>
     </bean>
